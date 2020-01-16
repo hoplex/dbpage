@@ -1,0 +1,19 @@
+{
+  "name": "dbpage",
+  "version": "1.0.0",
+  "description": "担保配置平台指南",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoplex/dbpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoplex/dbpage/issues"
+  },
+  "homepage": "https://github.com/hoplex/dbpage#readme"
+}
