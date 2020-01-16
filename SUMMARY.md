@@ -1,2 +1,2 @@
 # Summany
-* [编者序](readme.md)
+* [编者序](README.md)
