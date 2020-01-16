@@ -7,10 +7,10 @@ branches:
   only:
     - master
 
-git: # 克隆github上的项目到travis
-  quiet: true # 为了不打印一些日志,故设为安静克隆
-  depth: 1 # 只克隆最新的一次commit提交,最多可以克隆最新的30次提交,但是没必要
-  submodules: false # 不克隆子项目
+# git: # 克隆github上的项目到travis
+#   quiet: true # 为了不打印一些日志,故设为安静克隆
+#   depth: 1 # 只克隆最新的一次commit提交,最多可以克隆最新的30次提交,但是没必要
+#   submodules: false # 不克隆子项目
 
 cache:
   directories:
