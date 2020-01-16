@@ -60,3 +60,4 @@ deploy:
 #     - GH_REF: github.com/hoplex/dbpage.git # 设置GH_REF,换成自己用户名和仓库名
 #     - U_NAME: hoplex
 #     - U_EMAIL: beibei@hoplex.com
+
