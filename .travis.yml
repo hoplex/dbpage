@@ -26,23 +26,30 @@ install:
 script:
   - npm run build
 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local-dir: dist
+  github_token: $githubToken # Set in travis-ci.org dashboard
+  on:
+    branch: gh-pages
 #after_script前5句是把部署分支的.git文件夹保护起来，用于保留历史部署的commit日志，否则部署分支永远只有一条commit记录。
 #命令里面的变量都是在Travis CI里配置过的。
-after_script:
-  - git clone https://${GH_REF} .temp
-  - cd .temp
-  - git checkout gh-pages
-  - cd ../
-  - mv .temp/.git dist
-  - cd dist
-  - git config user.name "${U_NAME}"
-  - git config user.email "${U_EMAIL}"
-  - git add .
-  - git commit -m ":construction_worker:- Build & Deploy by Travis CI at `date +"%Y-%m-%d %H:%M"`"
-  - git push --force --quiet "https://${githubToken}@${GH_REF}" gh-pages:gh-pages
+# after_script:
+#   - git clone https://${GH_REF} .temp
+#   - cd .temp
+#   - git checkout gh-pages
+#   - cd ../
+#   - mv .temp/.git dist
+#   - cd dist
+#   - git config user.name "${U_NAME}"
+#   - git config user.email "${U_EMAIL}"
+#   - git add .
+#   - git commit -m ":construction_worker:- Build & Deploy by Travis CI at `date +"%Y-%m-%d %H:%M"`"
+#   - git push --force --quiet "https://${githubToken}@${GH_REF}" gh-pages:gh-pages
 # E: Build LifeCycle
-env:
-  global:
-    - GH_REF: github.com/hoplex/dbpage.git # 设置GH_REF,换成自己用户名和仓库名
-    - U_NAME: hoplex
-    - U_EMAIL: beibei@hoplex.com
+# env:
+#   global:
+#     - GH_REF: github.com/hoplex/dbpage.git # 设置GH_REF,换成自己用户名和仓库名
+#     - U_NAME: hoplex
+#     - U_EMAIL: beibei@hoplex.com
