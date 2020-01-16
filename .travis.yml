@@ -1,0 +1,48 @@
+language: node_js # 构建所需的语言环境
+
+node_js: "v10.15.3" # node环境的版本
+
+# 只有指定的分支提交时才会运行脚本
+branches:
+  only:
+    - master
+
+git: # 克隆github上的项目到travis
+  quiet: true # 为了不打印一些日志,故设为安静克隆
+  depth: 1 # 只克隆最新的一次commit提交,最多可以克隆最新的30次提交,但是没必要
+  submodules: false # 不克隆子项目
+
+cache:
+  directories:
+    - node_modules # 依赖缓存的目录
+
+before_install:
+  - export TZ='Asia/Shanghai' # 设置时区
+
+# S: Build Lifecycle
+install:
+  - npm i
+
+script:
+  - npm run build
+
+#after_script前5句是把部署分支的.git文件夹保护起来，用于保留历史部署的commit日志，否则部署分支永远只有一条commit记录。
+#命令里面的变量都是在Travis CI里配置过的。
+after_script:
+  - git clone https://${GH_REF} .temp
+  - cd .temp
+  - git checkout gh-pages
+  - cd ../
+  - mv .temp/.git dist
+  - cd dist
+  - git config user.name "${U_NAME}"
+  - git config user.email "${U_EMAIL}"
+  - git add .
+  - git commit -m ":construction_worker:- Build & Deploy by Travis CI at `date +"%Y-%m-%d %H:%M"`"
+  - git push --force --quiet "https://${githubToken}@${GH_REF}" gh-pages:gh-pages
+# E: Build LifeCycle
+env:
+  global:
+    - GH_REF: github.com/hoplex/dbpage.git # 设置GH_REF,换成自己用户名和仓库名
+    - U_NAME: hoplex
+    - U_EMAIL: beibei@hoplex.com
