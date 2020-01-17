@@ -2,7 +2,7 @@
 
 * [编者序](README.md)
 * [第一章](Chapter1/README.md)
-    * [第 1 节](Chapter1/1.md)
+    * [第 1 节,常用配置](Chapter1/1.md)
     * [第 2 节](Chapter1/2.md)
     * [第 3 节](Chapter1/3.md)
     * [第 4 节](Chapter1/4.md)
