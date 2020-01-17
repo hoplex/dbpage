@@ -23,7 +23,7 @@ before_install:
 # 依赖安装
 install:
   - npm install gitbook-cli -g
-  # 安装 gitbook 插件
+    # 安装 gitbook 插件
   - gitbook install
 
 # 构建脚本
@@ -35,11 +35,12 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  local-dir: dist
   github_token: $githubToken # Set in travis-ci.org dashboard
   local_dir: build
+  name: hoplex
+  email: beibei@hoplex.com
   on:
-    branch: gh-pages
+    branch: master
 #after_script前5句是把部署分支的.git文件夹保护起来，用于保留历史部署的commit日志，否则部署分支永远只有一条commit记录。
 #命令里面的变量都是在Travis CI里配置过的。
 # after_script:
