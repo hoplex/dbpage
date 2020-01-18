@@ -10,4 +10,4 @@
 
 生成的菜单都在“自动生成表单组”里面,拖出来!
 
-<img src="./img/menu_1.jpg" alt="menu_1" style="zoom:67%;" />
+<img src="./img/menu_1.jpg" alt="menu_1" style="zoom: 50%;" />
