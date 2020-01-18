@@ -4,4 +4,4 @@
 
 ### 1 参考配置
 
-<img src="/Users/qiongyanzhu/danbao/02-会议&amp;总结/dbpage/Chapter2/img/todolist_title_1.png" alt="todolist_title_1" style="zoom:50%;" />
+<img src="./img/todolist_title_1.png" alt="todolist_title_1" style="zoom:50%;" />
