@@ -1,7 +1,7 @@
 # Summary
 
 * [担保配置平台](README.md)
-* [第一章](Chapter1/README.md)
+* [第一章 断续完善](Chapter1/README.md)
     * [第 1 节 定制标记](Chapter1/customized.md)
     * [第 2 节 扩展字段的使用](Chapter1/extend_info.md)
     * [第 3 节 导入配置](Chapter1/import.md)
