@@ -4,7 +4,58 @@
 
 扩展字段就是“系统保留字段”(EXTEND_INFO).因为他是JSON,所以用处多多.
 
-### 简单介绍
+### 1. 案例
+
+我用这个"EXTEND_INFO"做修改留痕
+
+我用这个“ERROR_INFO”做错误记录
+
+我用类似JSON扩展出很多字段
+
+就酱!!!
+
+### 2. 坑
+
+虽然很简单,但是,在担保配置系统中,还是有所差别的.
+
+- 对象的时候,传回后台,得JSON.stringify
+
+  ```js
+  function convertToSave(param) {
+    let data = param.formDataList[0].manipulationData
+    
+    let ENTERPRISE_INFO = {
+      REGISTERED_CAPITAL: 0, // data.REGISTERED_CAPITAL, // 注册资本[万元]
+      PAID_CAPITAL: 0, // data.PAID_CAPITAL, // 实收资本[万元]
+      SALES_REVENUE: data.SALES_REVENUE, // 销售收入[万元]
+      TOTAL_ASSETS: data.TOTAL_ASSETS, // 资产总额[万元]
+      EMPLOYED_POPULATION: 0, // data.EMPLOYED_POPULATION, // 从业人数
+      ENTERPRISE_SIZE: 'WXQY', // data.ENTERPRISE_SIZE, // 企业规模
+      PROMOTE_EMPLOYMENT: data.PROMOTE_EMPLOYMENT, // 带动就业
+      DRIVE_REVENUE_GROWTH: data.DRIVE_REVENUE_GROWTH // 带动增收[万元]
+    }
+    data.ENTERPRISE_INFO = JSON.stringify(ENTERPRISE_INFO, null, 1)
+    
+    /** 中间省略一大段 */
+    return param
+  }
+  ```
+
+- 数组的时候,不需要任何处理.
+
+  昨天,看到数据库'\\\\[]\\'\一串引号、斜杠的时候.
+
+  我猜想,当然靠猜,天天调试,就没时间做项目了不是?
+
+  大概后台对数组做了处理,JSON对象就没有.
+
+### 3. 简要步骤
+
+无
+
+### 4. 可拿来主义
+
+##### 4.1 参考代码
 
 - 可以是对象
 
@@ -57,49 +108,4 @@
   ```
 
   直接JSON.stringify?那是万万不行的.手工写JSON,太容易错了.
-
-### 案例
-
-我用这个"EXTEND_INFO"做修改留痕
-
-我用这个“ERROR_INFO”做错误记录
-
-我用类似JSON扩展出很多字段
-
-就酱!!!
-
-### 爬坑
-
-虽然很简单,但是,在担保配置系统中,还是有所差别的.
-
-- 对象的时候,传回后台,得JSON.stringify
-
-  ```js
-  function convertToSave(param) {
-    let data = param.formDataList[0].manipulationData
-    
-    let ENTERPRISE_INFO = {
-      REGISTERED_CAPITAL: 0, // data.REGISTERED_CAPITAL, // 注册资本[万元]
-      PAID_CAPITAL: 0, // data.PAID_CAPITAL, // 实收资本[万元]
-      SALES_REVENUE: data.SALES_REVENUE, // 销售收入[万元]
-      TOTAL_ASSETS: data.TOTAL_ASSETS, // 资产总额[万元]
-      EMPLOYED_POPULATION: 0, // data.EMPLOYED_POPULATION, // 从业人数
-      ENTERPRISE_SIZE: 'WXQY', // data.ENTERPRISE_SIZE, // 企业规模
-      PROMOTE_EMPLOYMENT: data.PROMOTE_EMPLOYMENT, // 带动就业
-      DRIVE_REVENUE_GROWTH: data.DRIVE_REVENUE_GROWTH // 带动增收[万元]
-    }
-    data.ENTERPRISE_INFO = JSON.stringify(ENTERPRISE_INFO, null, 1)
-    
-    /** 中间省略一大段 */
-    return param
-  }
-  ```
-
-- 数组的时候,不需要任何处理.
-
-  昨天,看到数据库'\\\\[]\\'\一串引号、斜杠的时候.
-
-  我猜想,当然靠猜,天天调试,就没时间做项目了不是?
-
-  大概后台对数组做了处理,JSON对象就没有.
 
