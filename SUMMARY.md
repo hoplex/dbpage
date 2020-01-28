@@ -6,6 +6,7 @@
     * [第 2 节 生成表单组](Chapter1/generate.md)
     * [第 3 节 运行前端项目](Chapter1/run.md)
     * [第 4 节 持续集成](Chapter1/ci.md)
+    * [第 5 节 内嵌组件](Chapter1/embeded.md)
     * [表单组生成常见问题](Chapter1/faq.md)
 * [第二章 常用配置](Chapter2/README.md)
     * [第 0 节 定制建议&表单配置](Chapter2/form_config.md)

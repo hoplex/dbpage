@@ -4,14 +4,14 @@
 
 - docker部署生成路径,例如:/opt/XXX/tmp/20200103/XXX/businessForm
 
-<img src="/Users/qiongyanzhu/danbao/02-会议&总结/dbpage/Chapter1/img/all_2.png" alt="all_2" style="zoom:50%;" />
+<img src="./img/all_2.png" alt="all_2" style="zoom:50%;" />
 
 - 普通部署生成路径,例如:/home/test/20200103/businessForm
 - 本地Tomcat生成路径:/tomcat/bin/20200103/XXX/businessForm
 
 2. 生成的表单组,复制粘贴到pages框架目录:/lfcp-pages2/src/views/generatedForm/
 
-   <img src="/Users/qiongyanzhu/danbao/02-会议&总结/dbpage/Chapter1/img/all_3.png" alt="all_3" style="zoom:50%;" />
+   <img src="./img/all_3.png" alt="all_3" style="zoom:50%;" />
 
 3. 运行前端项目.
 

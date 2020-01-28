@@ -12,7 +12,7 @@
 
 2. “编辑”表单组,如果表单组只有一个表单,“表类型”必须是“主表”.
 
-   <img src="/Users/qiongyanzhu/danbao/02-会议&总结/dbpage/Chapter1/img/all_1.png" alt="tongxiang_1" style="zoom:50%;" />
+   <img src="./img/all_1.png" alt="tongxiang_1" style="zoom:50%;" />
 
 3. 【页面生成】选“无弹窗”——在哪呢,没找到
 
