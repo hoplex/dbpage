@@ -20,7 +20,13 @@
     * [第 15 节 为何只显示列表页面,不显示列表数据?-权限](Chapter2/list_authorize.md)
     * [第 16 节 首页>待办,去掉任务标题后的“()”部分](Chapter2/todolist_title.md)
     * [第 17 节 必填验证,废弃的和智能的](Chapter2/validate.md)
-    * [第 18 节 导入配置](Chapter2/import.md)
-* [第三章](Chapter3/README.md)
+    * [第 18 节 导入配置(没搞定)](Chapter2/import.md)
+    * [第 18 节 导入后台代码debug](Chapter2/import_debug.md)
+* [第三章 统计妙用](Chapter3/README.md)
+    - [第 1 节 错误概述](Chapter3/error.md)
+    - [第 2 节 证件号码唯一校验](Chapter3/credential_no_unique.md)
+    - [第 3 节 银行授信金额](Chapter3/bank_credit.md)
+    - [第 4 节 产品金额校验&产品反担保获取](Chapter3/credential_no_unique.md)
+    - 
 * [第四章](Chapter4/README.md)
 
