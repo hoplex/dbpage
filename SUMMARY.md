@@ -1,7 +1,12 @@
 # Summary
 
 * [担保配置平台](README.md)
-* [第一章](Chapter1/README.md)
+* [第一章 表单组&表单配置](Chapter1/README.md)
+    * [第 1 节 表单组&表单配置](Chapter1/all.md)
+    * [第 2 节 生成表单组](Chapter1/generate.md)
+    * [第 3 节 运行前端项目](Chapter1/run.md)
+    * [第 4 节 持续集成](Chapter1/ci.md)
+    * [表单组生成常见问题](Chapter1/faq.md)
 * [第二章 常用配置](Chapter2/README.md)
     * [第 0 节 定制建议&表单配置](Chapter2/form_config.md)
     * [第 1 节 下拉选项不是来自字典,来自数据库表怎么配?-配置](Chapter2/dict.md)
@@ -9,7 +14,7 @@
     * [第 3 节 如何配置表单页面默认值-配置](Chapter2/default_value.md)
     * [第 4 节 如何配置表单页面默认值2-配置](Chapter2/default_value2.md)
     * [第 5 节 还在傻傻的配菜单?-配置](Chapter2/menu.md)
-    * [第 6 节 修改了数据库字段-配置](Chapter2/db_field.md)
+    * [第 6 节 已同步数据库,修改表单数据库字段-配置](Chapter2/db_field.md)
     * [第 7 节 插播一条JS广告](Chapter2/js_f_error.md)
     * [第 8 节 创建视图,是直接在数据库加,还是在系统中配?-配置](Chapter2/sql_view.md)
     * [第 9 节 定制方法](Chapter2/customized.md)
