@@ -6,7 +6,7 @@
 
 内嵌组件,就是主表单中同时显示子表单,而不是页签
 
-<img src="./img/embeded_5.png" alt="embeded_5" style="zoom:67%;" />
+<img src="./img/embeded_0.png" alt="embeded_0" style="zoom:67%;" />
 
 
 

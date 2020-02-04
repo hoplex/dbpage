@@ -24,4 +24,5 @@ JS易错点广而告之!!!
 
 bug给圈上.还有,第一个条件被包含在第二个条件中了!
 
-<img src="./img/js_f_error_1.png" alt="js_f_error_1" style="zoom:67%;" />
+<img src="./img/js_f_error_3.png" alt="js_f_error_3" style="zoom:67%;" />
+

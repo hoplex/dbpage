@@ -42,8 +42,8 @@
 
    - 查不到就是没有.没有的话,可以按照这个规则自己添加一个数据源.
 
-<img src="./img/list_authorize_1.png" alt="list_authorize_1" style="zoom:50%;" />
+<img src="./img/list_authorize_4.png" alt="list_authorize_4" style="zoom:50%;" />
 
 3. 为某列表对应的“数据源”勾选其适配的“数据规则”,而后在角色管理,进行数据源配置.
 
-<img src="./img/list_authorize_4.png" alt="list_authorize_4" style="zoom:67%;" />
+<img src="./img/list_authorize_5.png" alt="list_authorize_5" style="zoom:67%;" />

@@ -28,9 +28,9 @@ yum install docker-ce docker-ce-cli containerd.io
 
 3）通过webmin设置docker开机启动并启动docker
 
-<img src="./img/webmin_1.png" alt="webmin_1" style="zoom:50%;" />
+<img src="./img/docker_webmin_1.png" alt="docker_webmin_1" style="zoom:50%;" />
 
-<img src="./img/webmin_2.png" alt="webmin_2" style="zoom:50%;" />
+<img src="./img/docker_webmin_2.png" alt="docker_webmin_2" style="zoom:50%;" />
 
 ##### 3.2 ubuntu
 

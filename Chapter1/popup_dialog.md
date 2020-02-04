@@ -2,13 +2,13 @@
 
 我没有配置过!有人问有人答,我记录了下来.效果如下.
 
-<img src="./img/popup_dialog_3.png" alt="popup_dialog_3" style="zoom:50%;" />
+<img src="./img/popup_dialog_1.png" alt="popup_dialog_1" style="zoom:50%;" />
 
 ### 1 简述
 
 1. 选择“搜索控件”
 
-   <img src="./img/popup_dialog_1.png" alt="popup_dialog_1" style="zoom:50%;" />
+   <img src="./img/popup_dialog_2.png" alt="popup_dialog_2" style="zoom:50%;" />
 
 2. 增加统计视图
 3. 配置扩展信息
@@ -16,7 +16,7 @@
    - dataSource,视图地址和查询条件
    - prefixCondition,用来加判断条件
 
-<img src="./img/popup_dialog_2.png" alt="popup_dialog_2" style="zoom:60%;" />
+<img src="./img/popup_dialog_4.png" alt="popup_dialog_4" style="zoom:60%;" />
 
 ### 2 部分配置
 
